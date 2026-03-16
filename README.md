@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:21262d&height=120&section=header" width="100%"/>
-
 # Sebastián Mayorga Castro
 
 **`Engineer → Data → ML/AI`**
@@ -22,16 +20,7 @@ I'm an engineer with a background in embedded systems, data engineering, and bus
 
 I like building things end-to-end: from hardware (PCB design, Arduino, embedded PID controllers) to full-stack applications (FastAPI + React + PostgreSQL) to RAG pipelines and LLM-powered tooling. Most of my personal projects sit at the intersection of **AI, automation, and developer tooling**.
 
-```python
-profile = {
-    "currently":   "Presales Engineer @ HPE Hybrid Cloud",
-    "building":    "RAG chatbot · AI-powered internal tooling",
-    "learning":    "ML Engineering · MLOps · LLM fine-tuning",
-    "ask_me":      "Python, FastAPI, Docker, Arduino, PID control",
-    "os":          "Windows + Fedora",
-    "location":    "Mérida, Yucatán, México",
-}
-```
+
 
 ---
 
@@ -65,17 +54,20 @@ profile = {
 **Embedded & Hardware**
 
 ![Arduino](https://img.shields.io/badge/Arduino-00878A?style=flat-square&logo=arduino&logoColor=white)
-![Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=flat-square&logo=archlinux&logoColor=white)
+![Linux](https://img.shields.io/badge/Fedora-51A2DA?style=flat-square&logo=fedora&logoColor=white)
 
 ---
 
 ## Featured projects
 
-### 🤖 [rag-gui](https://github.com/SebMay99/rag-gui)
-RAG chatbot for HPE GreenLake infrastructure documentation. Built with FastAPI, PostgreSQL (pgvector), React/Tailwind/shadcn, and Ollama running local LLMs (Qwen 7B + Snowflake Arctic Embed).
+### 🤖 [ollama-rag-bot](https://github.com/SebMay99/ollama-rag-bot)
+RAG chatbot for HPE GreenLake infrastructure documentation. FastAPI backend, PostgreSQL with pgvector, React/Tailwind/shadcn UI, and Ollama running local LLMs (Qwen 7B + Snowflake Arctic Embed). Fully containerized with Docker.
 
-### 🧲 [magnetic-levitator](https://github.com/SebMay99/magnetic-levitator)
-Magnetic levitation system with discrete PID controller on Arduino. Hall effect sensor feedback loop, custom PCB driver, dual-microcontroller architecture, LCD/keypad UI. University final project.
+### 🧲 [pid-magnetic-levitator](https://github.com/SebMay99/pid-magnetic-levitator)
+Magnetic levitation system with a discrete PID controller on Arduino. Hall effect sensor feedback loop, custom PCB driver, dual-microcontroller architecture (UNO + Nano), and LCD/keypad UI. University final project.
+
+### 📊 [magic-gamma-ml_classification](https://github.com/SebMay99/magic-gamma-ml_classification)
+Binary classification of gamma vs. hadron events from the MAGIC telescope dataset. Explores multiple ML algorithms with scikit-learn, including feature engineering, model comparison, and evaluation metrics.
 
 ---
 
@@ -86,13 +78,5 @@ Magnetic levitation system with discrete PID controller on Arduino. Hall effect 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SebMay99&show_icons=true&theme=github_dark&hide_border=true&include_all_commits=true&count_private=true)
 
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SebMay99&layout=compact&theme=github_dark&hide_border=true&langs_count=6)
-
-</div>
-
----
-
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:21262d,50:161b22,100:0d1117&height=80&section=footer" width="100%"/>
 
 </div>

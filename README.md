@@ -81,7 +81,7 @@ RAG chatbot for HPE GreenLake infrastructure documentation. FastAPI backend, Pos
 ### 🛩️ [monocular-drone-slam]([https://github.com/SebMay99](https://github.com/SebMay99/ORB-SLAM2_robot_localization))
 Two-year undergraduate research project on SLAM algorithms for autonomous monocular drones. Developed a C++ scale estimation algorithm using EKF and PID control, with ROS and OpenCV for real-time camera stream analysis. 70-page thesis.
 
-### 🏠 [house-price-predictor](github.com/SebMay99/price-prediction-regression)
+### 🏠 [house-price-predictor](https://github.com/SebMay99/price-prediction-regression)
 Regression model on the Ames Housing dataset with a Streamlit web app. Feature engineering, model comparison, and interactive predictions with Plotly visualizations.
 
 ### 📊 [magic-gamma-ml_classification](https://github.com/SebMay99/magic-gamma-ml_classification)

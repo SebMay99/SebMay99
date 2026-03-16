@@ -90,6 +90,8 @@ Binary classification of gamma vs. hadron events from the MAGIC telescope datase
 ### 🧲 [pid-magnetic-levitator](https://github.com/SebMay99/pid-magnetic-levitator)
 Magnetic levitation system with a discrete PID controller on Arduino. Hall effect sensor feedback loop, custom PCB driver, dual-microcontroller architecture (UNO + Nano), and LCD/keypad UI.
 
+### 💸 [finance-analytics-dashboard](https://github.com/SebMay99/finance-analytics-dashboard)
+A Streamlit-based financial analytics tool that transforms Excel P&L models into interactive visual dashboards enabling fast cost/revenue/margin analysis across business segments.
 ---
 
 ## GitHub stats

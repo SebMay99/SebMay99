@@ -18,7 +18,7 @@ Presales Solution Architect @ HPE Hybrid Cloud · Building toward ML/AI Engineer
 
 Mechatronics Engineer (Universidad Anáhuac Mayab) with a Diploma in Data Science and two years of undergraduate research in computer vision and SLAM algorithms for autonomous drones. Currently working as a **Presales Solution Architect at HPE Hybrid Cloud** while transitioning into **ML/AI Engineering**.
 
-My projects range from embedded systems (PID controllers, custom PCBs, microcontroller programming) to ML pipelines (scikit-learn, TensorFlow, XGBoost) to full-stack applications (FastAPI + React + PostgreSQL). I'm focused on building a solid, demonstrable portfolio — every repo here represents work I can explain end-to-end.
+My projects range from embedded systems (PID controllers, custom PCBs, microcontroller programming) to ML pipelines (scikit-learn, TensorFlow, XGBoost) to full-stack applications (FastAPI + React + PostgreSQL).
 
 ---
 

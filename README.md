@@ -2,9 +2,9 @@
 
 # Sebastián Mayorga Castro
 
-**`Engineer → Data → ML/AI`**
+**`Mechatronics Engineer · Data Science · ML/AI`**
 
-Presales Engineer @ HPE Hybrid Cloud · Transitioning into ML/AI Engineering · Mérida, México 🇲🇽
+Presales Solution Architect @ HPE Hybrid Cloud · Building toward ML/AI Engineering · Mérida, México 🇲🇽
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/sebastianmayorga)
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://youtube.com/@sebastianmayorga1159)
@@ -16,11 +16,9 @@ Presales Engineer @ HPE Hybrid Cloud · Transitioning into ML/AI Engineering · 
 
 ## About me
 
-I'm an engineer with a background in embedded systems, data engineering, and business intelligence — currently working as a **Presales Engineer at HPE Hybrid Cloud** while actively building toward a career in **ML/AI Engineering**.
+Mechatronics Engineer (Universidad Anáhuac Mayab) with a Diploma in Data Science and two years of undergraduate research in computer vision and SLAM algorithms for autonomous drones. Currently working as a **Presales Solution Architect at HPE Hybrid Cloud** while transitioning into **ML/AI Engineering**.
 
-I like building things end-to-end: from hardware (PCB design, Arduino, embedded PID controllers) to full-stack applications (FastAPI + React + PostgreSQL) to RAG pipelines and LLM-powered tooling. Most of my personal projects sit at the intersection of **AI, automation, and developer tooling**.
-
-
+My projects range from embedded systems (PID controllers, custom PCBs, microcontroller programming) to ML pipelines (scikit-learn, TensorFlow, XGBoost) to full-stack applications (FastAPI + React + PostgreSQL). I'm focused on building a solid, demonstrable portfolio — every repo here represents work I can explain end-to-end.
 
 ---
 
@@ -32,14 +30,16 @@ I like building things end-to-end: from hardware (PCB design, Arduino, embedded 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![C](https://img.shields.io/badge/C-A8B9CC?style=flat-square&logo=c&logoColor=black)
 
 **Backend & Data**
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Podman](https://img.shields.io/badge/Podman-892CA0?style=flat-square&logo=podman&logoColor=white)
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
 
 **Frontend**
 
@@ -56,17 +56,18 @@ I like building things end-to-end: from hardware (PCB design, Arduino, embedded 
 ![XGBoost](https://img.shields.io/badge/XGBoost-189FDD?style=flat-square&logo=xgboost&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)
 
 **Data & Visualization**
 
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=flat-square&logo=matplotlib&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=flat-square&logo=plotly&logoColor=white)
 
 **Embedded & OS**
 
 ![Arduino](https://img.shields.io/badge/Arduino-00878A?style=flat-square&logo=arduino&logoColor=white)
+![ROS](https://img.shields.io/badge/ROS-22314E?style=flat-square&logo=ros&logoColor=white)
 ![Fedora](https://img.shields.io/badge/Fedora-51A2DA?style=flat-square&logo=fedora&logoColor=white)
 ![Windows](https://img.shields.io/badge/Windows-0078D4?style=flat-square&logo=windows&logoColor=white)
 
@@ -77,11 +78,17 @@ I like building things end-to-end: from hardware (PCB design, Arduino, embedded 
 ### 🤖 [ollama-rag-bot](https://github.com/SebMay99/ollama-rag-bot)
 RAG chatbot for HPE GreenLake infrastructure documentation. FastAPI backend, PostgreSQL with pgvector, React/Tailwind/shadcn UI, and Ollama running local LLMs (Qwen 7B + Snowflake Arctic Embed). Fully containerized with Docker.
 
-### 🧲 [pid-magnetic-levitator](https://github.com/SebMay99/pid-magnetic-levitator)
-Magnetic levitation system with a discrete PID controller on Arduino. Hall effect sensor feedback loop, custom PCB driver, dual-microcontroller architecture (UNO + Nano), and LCD/keypad UI. University final project.
+### 🛩️ [monocular-drone-slam](https://github.com/SebMay99)
+Two-year undergraduate research project on SLAM algorithms for autonomous monocular drones. Developed a C++ scale estimation algorithm using EKF and PID control, with ROS and OpenCV for real-time camera stream analysis. 70-page thesis.
+
+### 🏠 [house-price-predictor](https://github.com/SebMay99)
+Regression model on the Ames Housing dataset with a Streamlit web app. Feature engineering, model comparison, and interactive predictions with Plotly visualizations.
 
 ### 📊 [magic-gamma-ml_classification](https://github.com/SebMay99/magic-gamma-ml_classification)
-Binary classification of gamma vs. hadron events from the MAGIC telescope dataset. Explores multiple ML algorithms with scikit-learn, including feature engineering, model comparison, and evaluation metrics.
+Binary classification of gamma vs. hadron events from the MAGIC telescope dataset. Five ML algorithms compared with scikit-learn, achieving ~87% accuracy through grid search optimization.
+
+### 🧲 [pid-magnetic-levitator](https://github.com/SebMay99/pid-magnetic-levitator)
+Magnetic levitation system with a discrete PID controller on Arduino. Hall effect sensor feedback loop, custom PCB driver, dual-microcontroller architecture (UNO + Nano), and LCD/keypad UI.
 
 ---
 

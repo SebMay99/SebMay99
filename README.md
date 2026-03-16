@@ -92,6 +92,7 @@ Magnetic levitation system with a discrete PID controller on Arduino. Hall effec
 
 ### 💸 [finance-analytics-dashboard](https://github.com/SebMay99/finance-analytics-dashboard)
 A Streamlit-based financial analytics tool that transforms Excel P&L models into interactive visual dashboards enabling fast cost/revenue/margin analysis across business segments.
+
 ---
 
 ## GitHub stats

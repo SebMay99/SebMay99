@@ -18,17 +18,17 @@ Finance & Sales Operations @ HPE · Transitioning into ML/AI Engineering · Mér
 
 ## About me
 
-I'm an engineer with a background in embedded systems, data engineering, and business intelligence — currently working at **HPE** on GreenLake infrastructure deal modeling while actively building toward a career in **ML/AI Engineering**.
+I'm an engineer with a background in embedded systems, data engineering, and business intelligence — currently working as a **Presales Engineer at HPE Hybrid Cloud** while actively building toward a career in **ML/AI Engineering**.
 
 I like building things end-to-end: from hardware (PCB design, Arduino, embedded PID controllers) to full-stack applications (FastAPI + React + PostgreSQL) to RAG pipelines and LLM-powered tooling. Most of my personal projects sit at the intersection of **AI, automation, and developer tooling**.
 
 ```python
 profile = {
-    "currently":   "Sales Ops / Finance @ HPE GreenLake",
+    "currently":   "Presales Engineer @ HPE Hybrid Cloud",
     "building":    "RAG chatbot · AI-powered internal tooling",
     "learning":    "ML Engineering · MLOps · LLM fine-tuning",
     "ask_me":      "Python, FastAPI, Docker, Arduino, PID control",
-    "os":          "Arch Linux + Hyprland (btw)",
+    "os":          "Windows + Fedora",
     "location":    "Mérida, Yucatán, México",
 }
 ```

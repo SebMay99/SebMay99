@@ -78,10 +78,10 @@ My projects range from embedded systems (PID controllers, custom PCBs, microcont
 ### 🤖 [ollama-rag-bot](https://github.com/SebMay99/ollama-rag-bot)
 RAG chatbot for HPE GreenLake infrastructure documentation. FastAPI backend, PostgreSQL with pgvector, React/Tailwind/shadcn UI, and Ollama running local LLMs (Qwen 7B + Snowflake Arctic Embed). Fully containerized with Docker.
 
-### 🛩️ [monocular-drone-slam](https://github.com/SebMay99)
+### 🛩️ [monocular-drone-slam]([https://github.com/SebMay99](https://github.com/SebMay99/ORB-SLAM2_robot_localization))
 Two-year undergraduate research project on SLAM algorithms for autonomous monocular drones. Developed a C++ scale estimation algorithm using EKF and PID control, with ROS and OpenCV for real-time camera stream analysis. 70-page thesis.
 
-### 🏠 [house-price-predictor](https://github.com/SebMay99)
+### 🏠 [house-price-predictor](github.com/SebMay99/price-prediction-regression)
 Regression model on the Ames Housing dataset with a Streamlit web app. Feature engineering, model comparison, and interactive predictions with Plotly visualizations.
 
 ### 📊 [magic-gamma-ml_classification](https://github.com/SebMay99/magic-gamma-ml_classification)

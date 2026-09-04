@@ -1,28 +1,68 @@
-"""Render the neofetch block and drop it into README.md.
+"""Render the neofetch profile block.
 
 Reads the ASCII art from tools/art.txt and the fields from tools/info.txt,
 lays the fields out with dot leaders so every value ends on the same column,
-pastes both columns together and rewrites the first ```asciidoc block in
-README.md with the result. tools/block.txt keeps a copy of the raw block.
+and writes three things:
+
+    tools/block.txt   plain text version of the block
+    light_mode.svg    coloured block for the light GitHub theme
+    dark_mode.svg     coloured block for the dark GitHub theme
+
+The README embeds the two SVGs through a <picture> element. Rendering to SVG
+instead of a fenced code block is what buys real colours: GitHub's syntax
+highlighter will not reliably tint `Key: value` pairs that sit to the right of
+ASCII art, but an SVG owns every glyph's colour.
 
 Usage:
     python tools/build.py
 """
 
 import os
-import re
 import sys
+from xml.sax.saxutils import escape
 
 GAP = 4
 MIN_DOTS = 2
-FENCE = "```"
-LANG = "asciidoc"
+
+FONT = "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace"
+FONT_SIZE = 13
+# Keep LINE_HEIGHT / (FONT_SIZE * ADVANCE) in step with --aspect in asciify.py,
+# otherwise the portrait comes out stretched.
+LINE_HEIGHT = 16
+PADDING = 12
+# Widest plausible advance for a monospace glyph, as a fraction of the size.
+# Only used to size the canvas: the font's own metrics keep the columns aligned.
+ADVANCE = 0.615
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ART = os.path.join(ROOT, "tools", "art.txt")
 INFO = os.path.join(ROOT, "tools", "info.txt")
 BLOCK = os.path.join(ROOT, "tools", "block.txt")
-README = os.path.join(ROOT, "README.md")
+
+THEMES = {
+    "light_mode.svg": {
+        "art": "#1f2328",
+        "user": "#1a7f37",
+        "section": "#0969da",
+        "key": "#8250df",
+        "value": "#1f2328",
+        "punct": "#8c959f",
+        "rule": "#afb8c1",
+        "dots": "#d1d9e0",
+    },
+    "dark_mode.svg": {
+        "art": "#c9d1d9",
+        "user": "#3fb950",
+        "section": "#58a6ff",
+        "key": "#a371f7",
+        "value": "#c9d1d9",
+        "punct": "#6e7681",
+        "rule": "#484f58",
+        "dots": "#373e47",
+    },
+}
+
+TITLE = "Sebastian Mayorga - neofetch profile card"
 
 BLANK = ("blank", "", "")
 
@@ -40,9 +80,9 @@ def write(path, text):
 def parse_info(text):
     """Turn info.txt into (kind, label, value) rows.
 
-    Blank line          -> spacer
+    Blank line           -> spacer
     Line starting with @ -> section header
-    label|value         -> field
+    label|value          -> field
     """
     items = []
     for number, raw in enumerate(text.splitlines(), start=1):
@@ -59,6 +99,10 @@ def parse_info(text):
     return items
 
 
+def prefix(label):
+    return "- %s: " % label
+
+
 def info_width(items):
     widths = [
         len(prefix(label)) + 1 + len(value) + MIN_DOTS
@@ -68,36 +112,56 @@ def info_width(items):
     return max(widths, default=0)
 
 
-def prefix(label):
-    return "- %s: " % label
-
-
-def render_info(items):
-    """Right-align every value against a shared edge, neofetch style."""
+def info_segments(items):
+    """Lay the fields out as coloured segments, values right-aligned."""
     width = info_width(items)
-    lines = []
+    rows = []
 
     for index, (kind, label, value) in enumerate(items):
         if kind == "blank":
-            lines.append("")
-        elif kind == "header":
-            # The first header is the user@host line; the rest are section rules.
-            head = label if index == 0 else "- %s" % label
-            lines.append("%s %s" % (head, "-" * max(1, width - len(head) - 1)))
-        else:
-            head = prefix(label)
-            dots = "." * max(MIN_DOTS, width - len(head) - 1 - len(value))
-            lines.append("%s%s %s" % (head, dots, value))
+            rows.append([])
+            continue
 
-    return lines
+        if kind == "header":
+            # The first header is the user@host line, the rest are section rules.
+            if index == 0:
+                segments = [(label, "user")]
+                used = len(label)
+            else:
+                segments = [("- ", "punct"), (label, "section")]
+                used = 2 + len(label)
+            segments.append((" " + "-" * max(1, width - used - 1), "rule"))
+            rows.append(segments)
+            continue
+
+        head = prefix(label)
+        dots = "." * max(MIN_DOTS, width - len(head) - 1 - len(value))
+        rows.append(
+            [
+                ("- ", "punct"),
+                ("%s:" % label, "key"),
+                (" %s " % dots, "dots"),
+                (value, "value"),
+            ]
+        )
+
+    return rows
 
 
 def merge(art, info):
-    width = max((len(line) for line in art), default=0)
+    """Put the art column and the info column side by side, line by line."""
+    art_width = max((len(line) for line in art), default=0)
+    rows = []
+
     for i in range(max(len(art), len(info))):
-        left = art[i] if i < len(art) else ""
-        right = info[i] if i < len(info) else ""
-        yield (left.ljust(width) + " " * GAP + right).rstrip()
+        left = (art[i] if i < len(art) else "").ljust(art_width + GAP)
+        rows.append([(left, "art")] + (info[i] if i < len(info) else []))
+
+    return rows
+
+
+def text_of(row):
+    return "".join(text for text, _ in row)
 
 
 def trim(lines):
@@ -108,26 +172,60 @@ def trim(lines):
     return lines
 
 
-def replace_block(readme, block):
-    opening = FENCE + LANG
-    pattern = re.compile(
-        "^%s[^\n]*\n.*?^%s[ \t]*$" % (re.escape(opening), re.escape(FENCE)),
-        re.DOTALL | re.MULTILINE,
-    )
-    fenced = "%s\n%s\n%s" % (opening, block, FENCE)
+def render_svg(rows, colors):
+    columns = max(len(text_of(row)) for row in rows)
+    width = round(columns * FONT_SIZE * ADVANCE) + 2 * PADDING
+    height = round(len(rows) * LINE_HEIGHT) + 2 * PADDING
 
-    if not pattern.search(readme):
-        sys.exit("README.md: no %s block to replace" % opening)
-    return pattern.sub(lambda _: fenced, readme, count=1)
+    styles = "\n".join(
+        "      .%s { fill: %s; }" % (name, color) for name, color in sorted(colors.items())
+    )
+
+    lines = []
+    for index, row in enumerate(rows):
+        if not text_of(row).strip():
+            continue
+        y = PADDING + LINE_HEIGHT * (index + 1) - 4
+        spans = "".join(
+            '<tspan class="%s">%s</tspan>' % (cls, escape(text)) for text, cls in row if text
+        )
+        lines.append('    <text x="%d" y="%.1f">%s</text>' % (PADDING, y, spans))
+
+    return """<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" \
+viewBox="0 0 {width} {height}" role="img" aria-labelledby="title">
+  <title id="title">{title}</title>
+  <style>
+    text {{
+      font-family: {font};
+      font-size: {size}px;
+      white-space: pre;
+      dominant-baseline: alphabetic;
+    }}
+{styles}
+  </style>
+  <g xml:space="preserve">
+{lines}
+  </g>
+</svg>
+""".format(
+        width=width,
+        height=height,
+        title=escape(TITLE),
+        font=FONT,
+        size=FONT_SIZE,
+        styles=styles,
+        lines="\n".join(lines),
+    )
 
 
 def main():
     art = trim(read(ART).splitlines())
-    info = render_info(parse_info(read(INFO)))
-    block = "\n".join(merge(art, info))
+    rows = merge(art, info_segments(parse_info(read(INFO))))
 
-    write(BLOCK, block + "\n")
-    write(README, replace_block(read(README), block))
+    write(BLOCK, "\n".join(text_of(row).rstrip() for row in rows) + "\n")
+
+    for name, colors in THEMES.items():
+        write(os.path.join(ROOT, name), render_svg(rows, colors))
 
 
 if __name__ == "__main__":

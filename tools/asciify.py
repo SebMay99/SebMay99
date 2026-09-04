@@ -9,8 +9,9 @@ Usage:
     python tools/asciify.py tools/photo.png tools/art.txt
     python tools/asciify.py photo.jpg tools/art.txt --width 48 --crop 85,20,375,320
 
-Tips: crop tight around the head, keep the width between 38 and 48, and raise
---contrast if the face turns into a solid block.
+Tips: leave some background around the head so the silhouette reads, keep the
+width around 50 (below ~44 the eyes stop resolving), and raise --contrast if
+the face turns into a solid block.
 """
 
 import argparse
@@ -20,8 +21,10 @@ from PIL import Image, ImageEnhance, ImageFilter, ImageOps
 # Light to dark. The first character is what the background collapses to.
 RAMP = " .,:;i1tfLCG08@"
 
-# A terminal cell is about twice as tall as it is wide.
-CELL_ASPECT = 0.5
+# Cell width divided by cell height in the rendered SVG: a 13px monospace glyph
+# advances about 7.5px and build.py stacks lines every 16px. Change one and the
+# portrait comes out stretched, so change both.
+CELL_ASPECT = 0.47
 
 # Head crop of the GitHub avatar, as left,top,right,bottom.
 DEFAULT_CROP = "85,20,375,320"
@@ -31,7 +34,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("photo")
     parser.add_argument("output")
-    parser.add_argument("--width", type=int, default=42, help="columns of art")
+    parser.add_argument("--width", type=int, default=52, help="columns of art")
     parser.add_argument("--crop", default=DEFAULT_CROP, help="left,top,right,bottom or none")
     parser.add_argument("--contrast", type=float, default=1.3)
     parser.add_argument("--sharpen", type=float, default=180, help="unsharp mask percent, 0 is off")

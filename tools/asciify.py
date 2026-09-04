@@ -35,10 +35,11 @@ from PIL import Image, ImageEnhance, ImageFilter, ImageOps
 # below carries them at the same advance width, so the columns stay aligned.
 RAMP = " ░▒▓█"
 
-# Cell width divided by cell height in the rendered SVG: a 12px monospace glyph
-# advances about 6.9px and build.py stacks lines every 14.5px. Change one and
-# the portrait comes out stretched, so change both.
-CELL_ASPECT = 0.475
+# Cell width divided by cell height in the rendered SVG. build.py draws the art
+# in its own small font, at ART_FONT_SIZE with an equal ART_LINE_HEIGHT, so a
+# cell is about 0.6 as wide as it is tall. Change one and the portrait comes out
+# stretched, so change both.
+CELL_ASPECT = 0.6
 
 # Crop of the GitHub avatar, as left,top,right,bottom. Leave air around the
 # head so it does not read as an extreme close-up, but cut above the shirt:
@@ -50,7 +51,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("photo")
     parser.add_argument("output")
-    parser.add_argument("--width", type=int, default=62, help="columns of art")
+    parser.add_argument("--width", type=int, default=96, help="columns of art")
     parser.add_argument("--crop", default=DEFAULT_CROP, help="left,top,right,bottom or none")
     parser.add_argument("--gamma", type=float, default=1.6, help="above 1 lifts the mid tones")
     parser.add_argument("--blank", type=int, default=222, help="brighter than this becomes a space")

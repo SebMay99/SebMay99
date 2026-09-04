@@ -41,7 +41,7 @@ BLOCK = os.path.join(ROOT, "tools", "block.txt")
 
 THEMES = {
     "light_mode.svg": {
-        "art": "#424a53",
+        "art": "#57606a",
         "user": "#1a7f37",
         "section": "#0969da",
         "key": "#8250df",
@@ -51,7 +51,7 @@ THEMES = {
         "dots": "#d1d9e0",
     },
     "dark_mode.svg": {
-        "art": "#adbac7",
+        "art": "#768390",
         "user": "#3fb950",
         "section": "#58a6ff",
         "key": "#a371f7",
@@ -191,7 +191,10 @@ def render_svg(rows, colors):
         )
         lines.append('    <text x="%d" y="%.1f">%s</text>' % (PADDING, y, spans))
 
-    return """<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" \
+    # The art uses block-element characters, so state the encoding rather than
+    # leaving a consumer to guess it.
+    return """<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" \
 viewBox="0 0 {width} {height}" role="img" aria-labelledby="title">
   <title id="title">{title}</title>
   <style>

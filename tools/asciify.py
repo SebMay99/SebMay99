@@ -30,7 +30,10 @@ import argparse
 from PIL import Image, ImageEnhance, ImageFilter, ImageOps
 
 # Light to dark. The first character is what the background collapses to.
-RAMP = " .-*@"
+# Block elements beat letters here: they are designed as fill patterns, so they
+# read as flat tone instead of as text noise. Every monospace font in the stack
+# below carries them at the same advance width, so the columns stay aligned.
+RAMP = " ░▒▓█"
 
 # Cell width divided by cell height in the rendered SVG: a 12px monospace glyph
 # advances about 6.9px and build.py stacks lines every 14.5px. Change one and

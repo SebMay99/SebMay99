@@ -1,0 +1,22 @@
+          .:-==+**+==-:.             seb@thinkpad ------------------------------
+       .-+*#%@@@@@@@@%#*+-.          - OS: ............. Arch (Omarchy + Hyprland), Windows 11, Android
+     .=*%@@@@@@@@@@@@@@@@%*=.        - Uptime: ......... 27 years
+    -*%@@@@@%#*+==+*#%@@@@@%*-       - Host: ........... HPE México - Hybrid Cloud
+   =%@@@@#=:          :=#@@@@%=      - Kernel: ......... Presales Solution Architect
+  -%@@@%-      ....      -%@@@%-     - Shell: .......... Mechatronics Eng. -> Data Science / ML
+ .#@@@%.    .:-==-:.      .%@@@#.    - Locale: ......... Mérida, México
+ =@@@@:    .=+*##*+=.      :@@@@=    - IDE: ............ VSCode, Neovim, Claude Code
+ *@@@#     -*%@@@@%*-       #@@@*
+ #@@@*     :+#@@@@#+:       *@@@#    - Languages.Programming: .. Python, JavaScript, TypeScript, C/C++
+ *@@@%.     .-+**+-.       .%@@@*    - Languages.Computer: ..... HTML, CSS, SQL, Bash, YAML, LaTeX
+ =@@@@=       ....         =@@@@=    - Languages.Real: ......... Español, English, Nihongo (JLPT N4)
+ .#@@@@*:              :*@@@@#.
+  -%@@@@%*=-:.....:-=*%@@@@%-        - Hobbies.Software: ....... Linux ricing, self-hosting, n8n, emulación
+   =%@@@@@@@@@@@@@@@@@@@@%=          - Hobbies.Hardware: ....... ThinkPad mods, planar IEMs, 3DS / PS Vita
+    -*%@@@@@@@@@@@@@@@@%*-           - Hobbies.Analog: ......... Guitarra, fotografía en película, D&D
+      .:=+*#%@@@@%#*+=:.
+                                     - Contact ---------------------------------
+                                     - GitHub: ......... SebMay99
+                                     - LinkedIn: ....... /in/sebastianmayorga
+                                     - YouTube: ........ @sebastianmayorga1159
+                                     - Email: .......... sebastian.mayorgacas@gmail.com

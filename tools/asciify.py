@@ -37,15 +37,17 @@ RAMP = " .-*@"
 # the portrait comes out stretched, so change both.
 CELL_ASPECT = 0.475
 
-# Head crop of the GitHub avatar, as left,top,right,bottom.
-DEFAULT_CROP = "85,20,375,315"
+# Crop of the GitHub avatar, as left,top,right,bottom. Leave air around the
+# head so it does not read as an extreme close-up, but cut above the shirt:
+# the checkered pattern turns into static at this resolution.
+DEFAULT_CROP = "55,0,405,330"
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("photo")
     parser.add_argument("output")
-    parser.add_argument("--width", type=int, default=60, help="columns of art")
+    parser.add_argument("--width", type=int, default=62, help="columns of art")
     parser.add_argument("--crop", default=DEFAULT_CROP, help="left,top,right,bottom or none")
     parser.add_argument("--gamma", type=float, default=1.6, help="above 1 lifts the mid tones")
     parser.add_argument("--blank", type=int, default=222, help="brighter than this becomes a space")

@@ -1,10 +1,10 @@
-"""Pega el arte ASCII (izquierda) con el bloque de info (derecha) sin romper la alineacion.
+"""Join the ASCII art (left) with the info column (right) without breaking alignment.
 
-Uso:
-    python tools/merge.py tools/art.txt tools/info.txt > tools/bloque.txt
-    python tools/merge.py tools/art.txt tools/info.txt tools/bloque.txt
+Usage:
+    python tools/merge.py tools/art.txt tools/info.txt > tools/block.txt
+    python tools/merge.py tools/art.txt tools/info.txt tools/block.txt
 
-El resultado va entre ```asciidoc y ``` dentro del README.
+Paste the result between ```asciidoc and ``` in the README.
 """
 
 import sys
@@ -28,7 +28,7 @@ def merge(art, info):
 
 def main():
     if len(sys.argv) < 3:
-        sys.exit("uso: merge.py <art.txt> <info.txt> [salida.txt]")
+        sys.exit("usage: merge.py <art.txt> <info.txt> [output.txt]")
 
     merged = list(merge(read_lines(sys.argv[1]), read_lines(sys.argv[2])))
 

@@ -5,13 +5,24 @@ spaces, dark pixels become dense glyphs. With a light backdrop behind the
 subject that leaves the background empty, so the portrait reads as a
 silhouette in both the light and the dark GitHub theme.
 
+Two settings do the heavy lifting on a face:
+
+--gamma lifts the mid tones, so skin drifts toward the sparse end of the ramp
+  while hair, glasses and beard stay dense. Without it the face renders in the
+  same glyphs as the hair and the portrait turns into a blob.
+--blank forces everything brighter than a threshold to a space, which clears
+  the shading on the wall behind the subject.
+
+A short ramp is deliberate: five levels keep the hair a solid mass instead of
+a noisy texture, which is what makes the features readable at this size.
+
 Usage:
     python tools/asciify.py tools/photo.png tools/art.txt
-    python tools/asciify.py photo.jpg tools/art.txt --width 48 --crop 85,20,375,320
+    python tools/asciify.py photo.jpg tools/art.txt --crop 85,20,375,315 --gamma 1.6
 
 Tips: leave some background around the head so the silhouette reads, keep the
-width around 50 (below ~44 the eyes stop resolving), and raise --contrast if
-the face turns into a solid block.
+width around 60 (below ~48 the glasses stop resolving), and raise --gamma if
+the face fills in.
 """
 
 import argparse
@@ -19,31 +30,33 @@ import argparse
 from PIL import Image, ImageEnhance, ImageFilter, ImageOps
 
 # Light to dark. The first character is what the background collapses to.
-RAMP = " .,:;i1tfLCG08@"
+RAMP = " .-*@"
 
-# Cell width divided by cell height in the rendered SVG: a 13px monospace glyph
-# advances about 7.5px and build.py stacks lines every 16px. Change one and the
-# portrait comes out stretched, so change both.
-CELL_ASPECT = 0.47
+# Cell width divided by cell height in the rendered SVG: a 12px monospace glyph
+# advances about 6.9px and build.py stacks lines every 14.5px. Change one and
+# the portrait comes out stretched, so change both.
+CELL_ASPECT = 0.475
 
 # Head crop of the GitHub avatar, as left,top,right,bottom.
-DEFAULT_CROP = "85,20,375,320"
+DEFAULT_CROP = "85,20,375,315"
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("photo")
     parser.add_argument("output")
-    parser.add_argument("--width", type=int, default=52, help="columns of art")
+    parser.add_argument("--width", type=int, default=60, help="columns of art")
     parser.add_argument("--crop", default=DEFAULT_CROP, help="left,top,right,bottom or none")
-    parser.add_argument("--contrast", type=float, default=1.3)
-    parser.add_argument("--sharpen", type=float, default=180, help="unsharp mask percent, 0 is off")
+    parser.add_argument("--gamma", type=float, default=1.6, help="above 1 lifts the mid tones")
+    parser.add_argument("--blank", type=int, default=222, help="brighter than this becomes a space")
+    parser.add_argument("--contrast", type=float, default=1.5)
+    parser.add_argument("--sharpen", type=float, default=200, help="unsharp mask percent, 0 is off")
     parser.add_argument("--aspect", type=float, default=CELL_ASPECT)
     parser.add_argument("--ramp", default=RAMP)
     parser.add_argument(
         "--cutoff",
         type=float,
-        default=6.0,
+        default=10.0,
         help="percent clipped from each end by autocontrast",
     )
     return parser.parse_args()
@@ -56,10 +69,18 @@ def prepare(args):
         image = image.crop(tuple(int(n) for n in args.crop.split(",")))
 
     if args.sharpen:
-        image = image.filter(ImageFilter.UnsharpMask(radius=4, percent=int(args.sharpen), threshold=2))
+        image = image.filter(
+            ImageFilter.UnsharpMask(radius=4, percent=int(args.sharpen), threshold=2)
+        )
 
     image = ImageOps.autocontrast(image.convert("L"), cutoff=args.cutoff)
-    return ImageEnhance.Contrast(image).enhance(args.contrast)
+    image = ImageEnhance.Contrast(image).enhance(args.contrast)
+    image = image.point(lambda p: round(255 * (p / 255) ** (1 / args.gamma)))
+
+    if args.blank:
+        image = image.point(lambda p: 255 if p >= args.blank else p)
+
+    return image
 
 
 def to_ascii(image, width, aspect, ramp):

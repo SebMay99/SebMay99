@@ -1,23 +1,26 @@
-                        .:ii:,.                         seb@thinkpad ----------------------------------------------
-                  .;iLC08@@@@8800Ct;.                   - OS: ...... Arch (Omarchy + Hyprland), Windows 11, Android
-               :tG8@@@@@@@@@@@@@@@8GC.                  - Uptime: ........................................ 27 years
-             :G@@@8@@@@@00GftfCG8@@@@f,                 - Host: ......................... HPE Mexico - Hybrid Cloud
-            i@@@@@@@GCfti1:,:,::;1t0@@81                - Kernel: ..................... Presales Solution Architect
-           t@@@@@8@L,,:::,::::::;;;i0@@@G.              - Shell: ........... Mechatronics Eng. -> Data Science / ML
-          :0@8@@@8@t,:::::::::::;ii;i8@@@t,             - Locale: .................................. Merida, Mexico
-         i0@@8@@@@L: ..,,,,,,,..,:;i:t@@@0f             - IDE: ........................ VSCode, Neovim, Claude Code
-        f@@@@@@8@@f1t1t1;;::iffLLLLCL:C@@@G1:.
-      .L@@@@@@8880CG8@@@0LfL0@@8GLLLCLL@@@@@GCi         - Languages.Programming: ... Python, JavaScript, SQL, C/C++
-      ,@@@@@@@8@8@80008CL@C8Lt0GGGGGf1G@@@@@@@@i        - Languages.Computer: ......... HTML, CSS, Bash, JSON, YAML
-     ;G@8@@@@@808Ct11t1:G; :0i;11;11t1tC@@@@@@@;        - Languages.Real: .... Spanish, English, Japanese (JLPT N4)
-    t@@@@@@@@@80Lii;;iiL1 ,.i0t;iii;;t:L@@@@@@1
-   .f@@@@@@@88G8Ct11tLL1tt1ftiLft1111;:C8@@@88i..       - Hobbies.Gaming: ..... PC gaming, emulation, 3DS / PS Vita
-   ,if@8@8@8@@G0fti1ti;C@0G8801;;iii1;1tL@@@80G1;,.     - Hobbies.Software: ....... Linux ricing, self-hosting, n8n
-   ,i;88@@@@@@GLGLCG80GCttifCG0Gftft1;f88@8888@C;;,.    - Hobbies.Hardware: .. PC building, ThinkPad mods, HiBy DAP
-. ,fG8@@8@@@@@8LGGf0L1tf1tfttLfG8Gttft8@@@@@8@88t;..    - Hobbies.Analog: ........... Guitar, film photography, D&D
- :@Gt@@@@@8@@@@0L0CL;;ifLCGCCLt1tLLLL8@@@G8@@@CLC;..
-.,;ffC8@@@@@@@@@8G80ti;;;111iittLLC08@@@@08@8@L10ti     - Contact -------------------------------------------------
-.::1@CG0@@8@@@@@@8@@8CfffLLCLCC008@G0@@@8@@@08888GLL    - GitHub: ........................................ SebMay99
-.:;8fL8@@@@8@@@@8G08@@@@@8@@@@@@@8C1G@@@@@0G08@@Ciit    - LinkedIn: .......................... /in/sebastianmayorga
-   :;10@@@@@@@@@0GCCG088@@@@@880LttfG@@@@@@0GCLti.,     - YouTube: .......................... @sebastianmayorga1159
- ..   ;C8@@@@@@@0CC0fCGCGGGGGCLf1fLC8@@@@@@@80t, . .    - Email: ................... sebastian.mayorgacas@gmail.com
+                         ...-****---....                        seb@thinkpad ----------------------------------------------
+                    ..-**@@@@@@@@@@@@@@*-..                     - OS: ...... Arch (Omarchy + Hyprland), Windows 11, Android
+                 .-*@@@@@@@@@@@@@@@@@@@*@**                     - Uptime: ........................................ 27 years
+               .*@@@@@@@@@@@***-..-**@@@@@@-                    - Host: ......................... HPE Mexico - Hybrid Cloud
+              .@@@@@@@@***--.-       ..-*@@@@.                  - Kernel: ..................... Presales Solution Architect
+             -@@@@@@@@*     .         . .*@@@@*                 - Shell: ........... Mechatronics Eng. -> Data Science / ML
+            .@@@@@@@@@.              .... *@@@@-                - Locale: .................................. Merida, Mexico
+            -@@@@@@@@*.               .....*@@@*-               - IDE: ........................ VSCode, Neovim, Claude Code
+          .*@@@@@@@@@.                 ... -@@@**.
+         .@@@@@@@@*@@------...  .--*******- *@@@@*..            - Languages.Programming: ... Python, JavaScript, SQL, C/C++
+        -@@@@@@@@@@@****@@@@*-.-*@@@**----*--@@@@@***.          - Languages.Computer: ......... HTML, CSS, Bash, JSON, YAML
+        @@@@@@@@@*@**********@@@*.*@*****-..*@@@@@@@@@-         - Languages.Real: .... Spanish, English, Japanese (JLPT N4)
+       -@@@@@@@@@@@@@----*-.*- .*..---.----.-*@@@@@@@@*
+     .*@@@@@@@@@@**- .     --   .@.       .-.-@@@@@@@*.         - Hobbies.Gaming: ..... PC gaming, emulation, 3DS / PS Vita
+     @@@@@@@@@@@@@*-------*-     .*------... -@@@@@@@.          - Hobbies.Software: ....... Linux ricing, self-hosting, n8n
+    .-@@@@@@@@*@***-....--..----*..-.......  **@@@@@*-          - Hobbies.Hardware: .. PC building, ThinkPad mods, HiBy DAP
+    ..-@@@*@@@@@**-....-. .*@***@** .........-.@@@@@**-..       - Hobbies.Analog: ........... Guitar, film photography, D&D
+    ...@*@@@@@@@*-*----****---.-****-..--.. -@*@@@@@@@*...
+    --*@@@@@@@@@@--*--@*-----------*@@*..-..*@@@@@@@@*@-..      - Contact -------------------------------------------------
+  -**@@@@@@@@@@@@*-**--. ..-.------..-*---.*@@@@@@@@@@-*..      - GitHub: ........................................ SebMay99
+  *@-.@@@@@@@@@@@@*-***....--***---...----*@@@@**@@@@-.*-.      - LinkedIn: .......................... /in/sebastianmayorga
+   .***@@@@@@@@@@@@@*@*-..   .... .----**@@@@@@@@@@*@*-**..     - YouTube: .......................... @sebastianmayorga1159
+ ..-*@-**@@@@@@@@@@@@@@@*------******@@@*-@@@@@@@@@*@@@@@***    - Email: ................... sebastian.mayorgacas@gmail.com
+ ..-*.*@@@@@@@@@@@@***@@@@@@@@@@@@@@@@@*-.@@@@@@***@@@@-- --
+    -.-@@@@@@@@@@@@**--**@@@@@@@@@@@*--..-*@@@@@@@*--**-. .
+      .-*@@@@@@@@@@****--*-***@****--..--*@@@@@@@@@@*.

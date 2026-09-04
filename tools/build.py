@@ -25,10 +25,10 @@ GAP = 4
 MIN_DOTS = 2
 
 FONT = "ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace"
-FONT_SIZE = 13
+FONT_SIZE = 12
 # Keep LINE_HEIGHT / (FONT_SIZE * ADVANCE) in step with --aspect in asciify.py,
 # otherwise the portrait comes out stretched.
-LINE_HEIGHT = 16
+LINE_HEIGHT = 14.5
 PADDING = 12
 # Widest plausible advance for a monospace glyph, as a fraction of the size.
 # Only used to size the canvas: the font's own metrics keep the columns aligned.
@@ -41,7 +41,7 @@ BLOCK = os.path.join(ROOT, "tools", "block.txt")
 
 THEMES = {
     "light_mode.svg": {
-        "art": "#1f2328",
+        "art": "#424a53",
         "user": "#1a7f37",
         "section": "#0969da",
         "key": "#8250df",
@@ -51,7 +51,7 @@ THEMES = {
         "dots": "#d1d9e0",
     },
     "dark_mode.svg": {
-        "art": "#c9d1d9",
+        "art": "#adbac7",
         "user": "#3fb950",
         "section": "#58a6ff",
         "key": "#a371f7",

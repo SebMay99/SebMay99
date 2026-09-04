@@ -1,13 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="943" height="392" viewBox="0 0 943 392" role="img" aria-labelledby="title">
+<svg xmlns="http://www.w3.org/2000/svg" width="932" height="401" viewBox="0 0 932 401" role="img" aria-labelledby="title">
   <title id="title">Sebastian Mayorga - neofetch profile card</title>
   <style>
     text {
       font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace;
-      font-size: 13px;
+      font-size: 12px;
       white-space: pre;
       dominant-baseline: alphabetic;
     }
-      .art { fill: #1f2328; }
+      .art { fill: #424a53; }
       .dots { fill: #d1d9e0; }
       .key { fill: #8250df; }
       .punct { fill: #8c959f; }
@@ -17,28 +17,31 @@
       .value { fill: #1f2328; }
   </style>
   <g xml:space="preserve">
-    <text x="12" y="24.0"><tspan class="art">                        .:ii:,.                         </tspan><tspan class="user">seb@thinkpad</tspan><tspan class="rule"> ----------------------------------------------</tspan></text>
-    <text x="12" y="40.0"><tspan class="art">                  .;iLC08@@@@8800Ct;.                   </tspan><tspan class="punct">- </tspan><tspan class="key">OS:</tspan><tspan class="dots"> ...... </tspan><tspan class="value">Arch (Omarchy + Hyprland), Windows 11, Android</tspan></text>
-    <text x="12" y="56.0"><tspan class="art">               :tG8@@@@@@@@@@@@@@@8GC.                  </tspan><tspan class="punct">- </tspan><tspan class="key">Uptime:</tspan><tspan class="dots"> ........................................ </tspan><tspan class="value">27 years</tspan></text>
-    <text x="12" y="72.0"><tspan class="art">             :G@@@8@@@@@00GftfCG8@@@@f,                 </tspan><tspan class="punct">- </tspan><tspan class="key">Host:</tspan><tspan class="dots"> ......................... </tspan><tspan class="value">HPE Mexico - Hybrid Cloud</tspan></text>
-    <text x="12" y="88.0"><tspan class="art">            i@@@@@@@GCfti1:,:,::;1t0@@81                </tspan><tspan class="punct">- </tspan><tspan class="key">Kernel:</tspan><tspan class="dots"> ..................... </tspan><tspan class="value">Presales Solution Architect</tspan></text>
-    <text x="12" y="104.0"><tspan class="art">           t@@@@@8@L,,:::,::::::;;;i0@@@G.              </tspan><tspan class="punct">- </tspan><tspan class="key">Shell:</tspan><tspan class="dots"> ........... </tspan><tspan class="value">Mechatronics Eng. -&gt; Data Science / ML</tspan></text>
-    <text x="12" y="120.0"><tspan class="art">          :0@8@@@8@t,:::::::::::;ii;i8@@@t,             </tspan><tspan class="punct">- </tspan><tspan class="key">Locale:</tspan><tspan class="dots"> .................................. </tspan><tspan class="value">Merida, Mexico</tspan></text>
-    <text x="12" y="136.0"><tspan class="art">         i0@@8@@@@L: ..,,,,,,,..,:;i:t@@@0f             </tspan><tspan class="punct">- </tspan><tspan class="key">IDE:</tspan><tspan class="dots"> ........................ </tspan><tspan class="value">VSCode, Neovim, Claude Code</tspan></text>
-    <text x="12" y="152.0"><tspan class="art">        f@@@@@@8@@f1t1t1;;::iffLLLLCL:C@@@G1:.          </tspan></text>
-    <text x="12" y="168.0"><tspan class="art">      .L@@@@@@8880CG8@@@0LfL0@@8GLLLCLL@@@@@GCi         </tspan><tspan class="punct">- </tspan><tspan class="key">Languages.Programming:</tspan><tspan class="dots"> ... </tspan><tspan class="value">Python, JavaScript, SQL, C/C++</tspan></text>
-    <text x="12" y="184.0"><tspan class="art">      ,@@@@@@@8@8@80008CL@C8Lt0GGGGGf1G@@@@@@@@i        </tspan><tspan class="punct">- </tspan><tspan class="key">Languages.Computer:</tspan><tspan class="dots"> ......... </tspan><tspan class="value">HTML, CSS, Bash, JSON, YAML</tspan></text>
-    <text x="12" y="200.0"><tspan class="art">     ;G@8@@@@@808Ct11t1:G; :0i;11;11t1tC@@@@@@@;        </tspan><tspan class="punct">- </tspan><tspan class="key">Languages.Real:</tspan><tspan class="dots"> .... </tspan><tspan class="value">Spanish, English, Japanese (JLPT N4)</tspan></text>
-    <text x="12" y="216.0"><tspan class="art">    t@@@@@@@@@80Lii;;iiL1 ,.i0t;iii;;t:L@@@@@@1         </tspan></text>
-    <text x="12" y="232.0"><tspan class="art">   .f@@@@@@@88G8Ct11tLL1tt1ftiLft1111;:C8@@@88i..       </tspan><tspan class="punct">- </tspan><tspan class="key">Hobbies.Gaming:</tspan><tspan class="dots"> ..... </tspan><tspan class="value">PC gaming, emulation, 3DS / PS Vita</tspan></text>
-    <text x="12" y="248.0"><tspan class="art">   ,if@8@8@8@@G0fti1ti;C@0G8801;;iii1;1tL@@@80G1;,.     </tspan><tspan class="punct">- </tspan><tspan class="key">Hobbies.Software:</tspan><tspan class="dots"> ....... </tspan><tspan class="value">Linux ricing, self-hosting, n8n</tspan></text>
-    <text x="12" y="264.0"><tspan class="art">   ,i;88@@@@@@GLGLCG80GCttifCG0Gftft1;f88@8888@C;;,.    </tspan><tspan class="punct">- </tspan><tspan class="key">Hobbies.Hardware:</tspan><tspan class="dots"> .. </tspan><tspan class="value">PC building, ThinkPad mods, HiBy DAP</tspan></text>
-    <text x="12" y="280.0"><tspan class="art">. ,fG8@@8@@@@@8LGGf0L1tf1tfttLfG8Gttft8@@@@@8@88t;..    </tspan><tspan class="punct">- </tspan><tspan class="key">Hobbies.Analog:</tspan><tspan class="dots"> ........... </tspan><tspan class="value">Guitar, film photography, D&amp;D</tspan></text>
-    <text x="12" y="296.0"><tspan class="art"> :@Gt@@@@@8@@@@0L0CL;;ifLCGCCLt1tLLLL8@@@G8@@@CLC;..    </tspan></text>
-    <text x="12" y="312.0"><tspan class="art">.,;ffC8@@@@@@@@@8G80ti;;;111iittLLC08@@@@08@8@L10ti     </tspan><tspan class="punct">- </tspan><tspan class="section">Contact</tspan><tspan class="rule"> -------------------------------------------------</tspan></text>
-    <text x="12" y="328.0"><tspan class="art">.::1@CG0@@8@@@@@@8@@8CfffLLCLCC008@G0@@@8@@@08888GLL    </tspan><tspan class="punct">- </tspan><tspan class="key">GitHub:</tspan><tspan class="dots"> ........................................ </tspan><tspan class="value">SebMay99</tspan></text>
-    <text x="12" y="344.0"><tspan class="art">.:;8fL8@@@@8@@@@8G08@@@@@8@@@@@@@8C1G@@@@@0G08@@Ciit    </tspan><tspan class="punct">- </tspan><tspan class="key">LinkedIn:</tspan><tspan class="dots"> .......................... </tspan><tspan class="value">/in/sebastianmayorga</tspan></text>
-    <text x="12" y="360.0"><tspan class="art">   :;10@@@@@@@@@0GCCG088@@@@@880LttfG@@@@@@0GCLti.,     </tspan><tspan class="punct">- </tspan><tspan class="key">YouTube:</tspan><tspan class="dots"> .......................... </tspan><tspan class="value">@sebastianmayorga1159</tspan></text>
-    <text x="12" y="376.0"><tspan class="art"> ..   ;C8@@@@@@@0CC0fCGCGGGGGCLf1fLC8@@@@@@@80t, . .    </tspan><tspan class="punct">- </tspan><tspan class="key">Email:</tspan><tspan class="dots"> ................... </tspan><tspan class="value">sebastian.mayorgacas@gmail.com</tspan></text>
+    <text x="12" y="22.5"><tspan class="art">                         ...-****---....                        </tspan><tspan class="user">seb@thinkpad</tspan><tspan class="rule"> ----------------------------------------------</tspan></text>
+    <text x="12" y="37.0"><tspan class="art">                    ..-**@@@@@@@@@@@@@@*-..                     </tspan><tspan class="punct">- </tspan><tspan class="key">OS:</tspan><tspan class="dots"> ...... </tspan><tspan class="value">Arch (Omarchy + Hyprland), Windows 11, Android</tspan></text>
+    <text x="12" y="51.5"><tspan class="art">                 .-*@@@@@@@@@@@@@@@@@@@*@**                     </tspan><tspan class="punct">- </tspan><tspan class="key">Uptime:</tspan><tspan class="dots"> ........................................ </tspan><tspan class="value">27 years</tspan></text>
+    <text x="12" y="66.0"><tspan class="art">               .*@@@@@@@@@@@***-..-**@@@@@@-                    </tspan><tspan class="punct">- </tspan><tspan class="key">Host:</tspan><tspan class="dots"> ......................... </tspan><tspan class="value">HPE Mexico - Hybrid Cloud</tspan></text>
+    <text x="12" y="80.5"><tspan class="art">              .@@@@@@@@***--.-       ..-*@@@@.                  </tspan><tspan class="punct">- </tspan><tspan class="key">Kernel:</tspan><tspan class="dots"> ..................... </tspan><tspan class="value">Presales Solution Architect</tspan></text>
+    <text x="12" y="95.0"><tspan class="art">             -@@@@@@@@*     .         . .*@@@@*                 </tspan><tspan class="punct">- </tspan><tspan class="key">Shell:</tspan><tspan class="dots"> ........... </tspan><tspan class="value">Mechatronics Eng. -&gt; Data Science / ML</tspan></text>
+    <text x="12" y="109.5"><tspan class="art">            .@@@@@@@@@.              .... *@@@@-                </tspan><tspan class="punct">- </tspan><tspan class="key">Locale:</tspan><tspan class="dots"> .................................. </tspan><tspan class="value">Merida, Mexico</tspan></text>
+    <text x="12" y="124.0"><tspan class="art">            -@@@@@@@@*.               .....*@@@*-               </tspan><tspan class="punct">- </tspan><tspan class="key">IDE:</tspan><tspan class="dots"> ........................ </tspan><tspan class="value">VSCode, Neovim, Claude Code</tspan></text>
+    <text x="12" y="138.5"><tspan class="art">          .*@@@@@@@@@.                 ... -@@@**.              </tspan></text>
+    <text x="12" y="153.0"><tspan class="art">         .@@@@@@@@*@@------...  .--*******- *@@@@*..            </tspan><tspan class="punct">- </tspan><tspan class="key">Languages.Programming:</tspan><tspan class="dots"> ... </tspan><tspan class="value">Python, JavaScript, SQL, C/C++</tspan></text>
+    <text x="12" y="167.5"><tspan class="art">        -@@@@@@@@@@@****@@@@*-.-*@@@**----*--@@@@@***.          </tspan><tspan class="punct">- </tspan><tspan class="key">Languages.Computer:</tspan><tspan class="dots"> ......... </tspan><tspan class="value">HTML, CSS, Bash, JSON, YAML</tspan></text>
+    <text x="12" y="182.0"><tspan class="art">        @@@@@@@@@*@**********@@@*.*@*****-..*@@@@@@@@@-         </tspan><tspan class="punct">- </tspan><tspan class="key">Languages.Real:</tspan><tspan class="dots"> .... </tspan><tspan class="value">Spanish, English, Japanese (JLPT N4)</tspan></text>
+    <text x="12" y="196.5"><tspan class="art">       -@@@@@@@@@@@@@----*-.*- .*..---.----.-*@@@@@@@@*         </tspan></text>
+    <text x="12" y="211.0"><tspan class="art">     .*@@@@@@@@@@**- .     --   .@.       .-.-@@@@@@@*.         </tspan><tspan class="punct">- </tspan><tspan class="key">Hobbies.Gaming:</tspan><tspan class="dots"> ..... </tspan><tspan class="value">PC gaming, emulation, 3DS / PS Vita</tspan></text>
+    <text x="12" y="225.5"><tspan class="art">     @@@@@@@@@@@@@*-------*-     .*------... -@@@@@@@.          </tspan><tspan class="punct">- </tspan><tspan class="key">Hobbies.Software:</tspan><tspan class="dots"> ....... </tspan><tspan class="value">Linux ricing, self-hosting, n8n</tspan></text>
+    <text x="12" y="240.0"><tspan class="art">    .-@@@@@@@@*@***-....--..----*..-.......  **@@@@@*-          </tspan><tspan class="punct">- </tspan><tspan class="key">Hobbies.Hardware:</tspan><tspan class="dots"> .. </tspan><tspan class="value">PC building, ThinkPad mods, HiBy DAP</tspan></text>
+    <text x="12" y="254.5"><tspan class="art">    ..-@@@*@@@@@**-....-. .*@***@** .........-.@@@@@**-..       </tspan><tspan class="punct">- </tspan><tspan class="key">Hobbies.Analog:</tspan><tspan class="dots"> ........... </tspan><tspan class="value">Guitar, film photography, D&amp;D</tspan></text>
+    <text x="12" y="269.0"><tspan class="art">    ...@*@@@@@@@*-*----****---.-****-..--.. -@*@@@@@@@*...      </tspan></text>
+    <text x="12" y="283.5"><tspan class="art">    --*@@@@@@@@@@--*--@*-----------*@@*..-..*@@@@@@@@*@-..      </tspan><tspan class="punct">- </tspan><tspan class="section">Contact</tspan><tspan class="rule"> -------------------------------------------------</tspan></text>
+    <text x="12" y="298.0"><tspan class="art">  -**@@@@@@@@@@@@*-**--. ..-.------..-*---.*@@@@@@@@@@-*..      </tspan><tspan class="punct">- </tspan><tspan class="key">GitHub:</tspan><tspan class="dots"> ........................................ </tspan><tspan class="value">SebMay99</tspan></text>
+    <text x="12" y="312.5"><tspan class="art">  *@-.@@@@@@@@@@@@*-***....--***---...----*@@@@**@@@@-.*-.      </tspan><tspan class="punct">- </tspan><tspan class="key">LinkedIn:</tspan><tspan class="dots"> .......................... </tspan><tspan class="value">/in/sebastianmayorga</tspan></text>
+    <text x="12" y="327.0"><tspan class="art">   .***@@@@@@@@@@@@@*@*-..   .... .----**@@@@@@@@@@*@*-**..     </tspan><tspan class="punct">- </tspan><tspan class="key">YouTube:</tspan><tspan class="dots"> .......................... </tspan><tspan class="value">@sebastianmayorga1159</tspan></text>
+    <text x="12" y="341.5"><tspan class="art"> ..-*@-**@@@@@@@@@@@@@@@*------******@@@*-@@@@@@@@@*@@@@@***    </tspan><tspan class="punct">- </tspan><tspan class="key">Email:</tspan><tspan class="dots"> ................... </tspan><tspan class="value">sebastian.mayorgacas@gmail.com</tspan></text>
+    <text x="12" y="356.0"><tspan class="art"> ..-*.*@@@@@@@@@@@@***@@@@@@@@@@@@@@@@@*-.@@@@@@***@@@@-- --    </tspan></text>
+    <text x="12" y="370.5"><tspan class="art">    -.-@@@@@@@@@@@@**--**@@@@@@@@@@@*--..-*@@@@@@@*--**-. .     </tspan></text>
+    <text x="12" y="385.0"><tspan class="art">      .-*@@@@@@@@@@****--*-***@****--..--*@@@@@@@@@@*.          </tspan></text>
   </g>
 </svg>
